@@ -33,16 +33,16 @@ public class HardcoreSlimefun extends JavaPlugin {
         Config.INSTANCE.load(this.getConfig());
 
         if (getServer().getPluginManager().getPlugin("Slimefun") == null) {
-            getLogger().severe("Slimefun not found! Disabling plugin...");
+            getLogger().severe("Slimefun 未找到! 停用插件...");
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
 
-        if (getConfig().getBoolean("auto-update") && getDescription().getVersion().startsWith("DEV - ")) {
+        /*if (getConfig().getBoolean("auto-update") && getDescription().getVersion().startsWith("DEV - ")) {
             new GitHubBuildsUpdater(this, getFile(), "Slimefun-Addon-Community/HardcoreSlimefun/main", "DEV").start();
-        }
+        }*/
 
-        new HardcoreMetrics(this).start();
+        //new HardcoreMetrics(this).start();
 
         getServer().getPluginManager().registerEvents(new Events(), this);
         getServer().getPluginManager().registerEvents(new AndroidEvents(), this);

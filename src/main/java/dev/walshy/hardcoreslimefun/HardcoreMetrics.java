@@ -10,7 +10,7 @@ import java.util.concurrent.Callable;
 import java.util.function.BooleanSupplier;
 import java.util.function.DoubleSupplier;
 
-class HardcoreMetrics {
+/*class HardcoreMetrics {
 
     private final HardcoreSlimefun plugin;
 
@@ -58,4 +58,4 @@ class HardcoreMetrics {
         return () -> setting.getAsBoolean() ? "Yes" : "No";
     }
 
-}
+}*/
