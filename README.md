@@ -55,6 +55,7 @@ android:
   malfunction-duration: 30
 
 messages:
+  # %research% 可用於顯示丟失的研究名稱
   lost-random-research: '&c你遺忘了隨機的研究!'
   lost-all-research: '&c喔不... 你遺忘了所有的研究!'
   research-failed: '&c研究失敗! 你需要再研究一次 :^)'
